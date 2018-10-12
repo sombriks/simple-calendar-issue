@@ -12,17 +12,7 @@ Vue.use(Vuetify);
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  routes: [{
-    path: "/",
-    component: require("./outer.vue"),
-    children: [{
-      path: "/",
-      redirect: "/inner"
-    }, {
-      path: "/inner",
-      component: require("./hello-calendar.vue")
-    }]
-  }]
+  routes: require("./routes")
 });
 
 // simple calendar components
