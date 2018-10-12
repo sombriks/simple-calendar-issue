@@ -14,7 +14,14 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes: [{
     path: "/",
-    component: require("./hello-calendar.vue")
+    component: require("./outer.vue"),
+    children: [{
+      path: "/",
+      redirect: "/inner"
+    }, {
+      path: "/inner",
+      component: require("./hello-calendar.vue")
+    }]
   }]
 });
 

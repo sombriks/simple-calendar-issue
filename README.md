@@ -81,3 +81,7 @@ Even puting the calendar inside a few vuetify components, the problem couldn't b
 Still unable to reproduce the problem
 
 ## vue + vuetify + vue-router + vue-simple-calendar + routes with children routers
+
+Still no issue.
+
+Perhaps the problem is in the project setup...
