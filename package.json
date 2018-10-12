@@ -1,0 +1,42 @@
+{
+  "name": "simple-calendar-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo src/main.js:build.js -o -l -H 127.0.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vue-simple-calendar": "^4.1.0",
+    "vuetify": "^1.2.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "browserify-css": "^0.14.0",
+    "budo": "^11.3.2",
+    "vueify": "^9.4.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ],
+      "vueify",
+      "browserify-css"
+    ]
+  }
+}
